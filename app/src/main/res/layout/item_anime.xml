@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Imagen del anime -->
+        <ImageView
+            android:id="@+id/imagenAnime"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="" />
+
+        <!-- Información del anime -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="16dp">
+
+            <TextView
+                android:id="@+id/nombreAnime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Anime"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/generoAnime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Género"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/estudiosAnime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estudios"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Botón para añadir a favoritos (visible solo en HomeFragment) -->
+        <Button
+            android:id="@+id/botonFavorito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir a Favoritos"
+            android:visibility="gone" /> <!-- Inicialmente oculto -->
+
+        <!-- Botón para eliminar de favoritos (visible solo en FavoritesFragment) -->
+        <Button
+            android:id="@+id/botonEliminarFavorito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:visibility="gone" /> <!-- Inicialmente oculto -->
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

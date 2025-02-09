@@ -1,10 +1,32 @@
 <resources>
     <string name="app_name">AniVerse</string>
     <string name="usuario">Usuario</string>
-    <string name="bienvenida">BIENVENIDO A ANIVERSE</string>
+    <string name="bienvenida">Bienvenido a AniVerse</string>
     <string name="botonEntrar">Entrar</string>
     <string name="botonContactar">Contactar</string>
     <string name="descripcionAniVerse">
         Bienvenido a AniVerse.
     </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnMenu">Continuar</string>
+    <string name="Notificaciones">Introducción</string>
+    <string name="menuTab2">Pulse en Continuar para ir a la aplicación principal.</string>
+    <string name="tituloApp">AniVerse</string>
+    <string name="homeMenu">Home</string>
+    <string name="favoritosMenu">Favoritos</string>
+    <string name="ajustesMenu">Ajustes</string>
+    <string name="registrarse">Registrarse\n</string>
+    <string name="logo_description">Foto de logo de AniVerse</string>
+    <string name="additional_info">Óscar Marian Leiva Bielka</string>
+    <string name="tvOscuro">Modo Oscuro</string>
+    <string name="exit">Salir</string>
+    <string name="nombre_del_anime">Nombre del Anime</string>
+    <string name="g_nero">Género</string>
+    <string name="estudios">Estudios</string>
+    <string name="settings">Ajustes</string>
+    <string name="usuarioSettings">Usuario:</string>
+    <string name="guardar">Guardar</string>
+    <string name="editTextFavDetail">Escribe tu comentario aquí</string>
+    <string name="btnGuardarFavDetail">Guardar Comentario</string>
+    <string name="txtReseñasFavDetail">Reseñas:</string>
 </resources>

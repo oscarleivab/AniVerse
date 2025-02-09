@@ -20,17 +20,5 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        val button = findViewById<Button>(R.id.button)
-
-        val editTextText = findViewById<EditText>(R.id.editTextText)
-
-        button.setOnClickListener{
-            val texto = editTextText.text.toString()
-            val intent = Intent(this, CreditActivity::class.java)
-            intent.putExtra("EXTRA_TEXTO", texto)
-            startActivity(intent)
-        }
-
     }
 }
