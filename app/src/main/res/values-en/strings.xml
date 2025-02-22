@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AniVerse</string>
+    <string name="usuario">User</string>
+    <string name="bienvenida">Welcome to AniVerse</string>
+    <string name="botonEntrar">Enter</string>
+    <string name="botonContactar">Contact</string>
+    <string name="descripcionAniVerse">
+        Welcome to AniVerse.
+    </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnMenu">Continue</string>
+    <string name="Notificaciones">Introduction</string>
+    <string name="menuTab2">Press Continue to go to the main application.</string>
+    <string name="tituloApp">AniVerse</string>
+    <string name="homeMenu">Home</string>
+    <string name="favoritosMenu">Favorites</string>
+    <string name="ajustesMenu">Settings</string>
+    <string name="registrarse">Register\n</string>
+    <string name="logo_description">AniVerse logo photo</string>
+    <string name="additional_info">Óscar Marian Leiva Bielka</string>
+    <string name="tvOscuro">Dark Mode</string>
+    <string name="exit">Exit</string>
+    <string name="nombre_del_anime">Anime Name</string>
+    <string name="g_nero">Genre</string>
+    <string name="estudios">Studios</string>
+    <string name="settings">Settings</string>
+    <string name="usuarioSettings">User: %1$s</string>
+    <string name="guardar">Save</string>
+    <string name="editTextFavDetail">Write your comment here</string>
+    <string name="btnGuardarFavDetail">Save Comment</string>
+    <string name="txtReseñasFavDetail">Reviews:</string>
+    <!--Strings para los generos que están en HomeFragment-->
+    <string name="generoNaruto">Action, Adventure</string>
+    <string name="generoAoT">Action, Drama</string>
+    <string name="generoMHA">Action, Superheroes</string>
+    <string name="generoDemonSlayer">Action, Fantasy</string>
+    <string name="generoOnePiece">Adventure, Comedy</string>
+    <!--String para dar la bienvenida a usuario en Tab1NoticeFragment-->
+    <string name="bienvenida_usuario">WELCOME TO ANIVERSE, %1$s</string>
+    <!--Botones del FavoriteFragment y HomeFragment-->
+    <string name="btnFavoritos">Add to Favorites</string>
+    <string name="btnEliminar">Delete</string>
+    <!--String para reseñas del FavoriteDetailFragment-->
+    <string name="reseñasFavDetail">Reviews:</string>
+    <!--String para el menú superior de NoticeFragment-->
+    <string name="noticeIni">Home</string>
+    <string name="noticeMenu">Menu</string>
+</resources>

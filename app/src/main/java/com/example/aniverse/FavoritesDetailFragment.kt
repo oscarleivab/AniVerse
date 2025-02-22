@@ -40,7 +40,7 @@ class FavoritesDetailFragment : Fragment() {
 
             // Cargar comentarios guardados
             val sharedPreferences = requireContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-            textoReseAs.text = sharedPreferences.getString(anime.nombre, "Reseñas:")
+            textoReseAs.text = sharedPreferences.getString(anime.nombre, getString(R.string.reseñasFavDetail))
 
             botonGuardarComentario.setOnClickListener {
                 val comentario = editTextComentario.text.toString()

@@ -37,7 +37,7 @@ class NoticeFragment : Fragment() {
             tab, position ->
                 when(position){
                     0 -> {
-                        tab.text = "Inicio"
+                        tab.text = getString(R.string.noticeIni)
                         tab.setIcon(R.drawable.baseline_home_24)
                         val badge : BadgeDrawable = tab.orCreateBadge
                         badge.backgroundColor =
@@ -47,7 +47,7 @@ class NoticeFragment : Fragment() {
                         badge.badgeGravity = BadgeDrawable.TOP_START
                     }
                     1 -> {
-                        tab.text = "Menu"
+                        tab.text = getString(R.string.noticeMenu)
                         tab.setIcon(R.drawable.baseline_menu_24)
                     }
                 }

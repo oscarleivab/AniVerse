@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.fragment.findNavController
 import com.example.aniverse.databinding.FragmentSettingsBinding
@@ -31,7 +32,7 @@ class SettingsFragment : Fragment() {
 
         // Obtener nombre del usuario
         val userName = sharedPreferences.getString("username", "Invitado")
-        binding.tvUserInfo.text = "Usuario: $userName"
+        binding.tvUserInfo.text = getString(R.string.usuarioSettings, userName)
 
         // Configurar el Switch de Modo Oscuro
         val isDarkMode = sharedPreferences.getBoolean("dark_mode", false)
@@ -42,18 +43,19 @@ class SettingsFragment : Fragment() {
             // Cambiar el modo oscuro en toda la aplicación
             if (isChecked) {
                 enableDarkMode()
+                Toast.makeText(requireContext(), "Activando el modo oscuro...", Toast.LENGTH_SHORT).show()
             } else {
                 disableDarkMode()
+                Toast.makeText(requireContext(), "Activando el modo claro...", Toast.LENGTH_SHORT).show()
             }
 
             with(sharedPreferences.edit()){
                 putBoolean("dark_mode", isChecked)
-                commit()
+                apply()
             }
 
-            if (isAdded && activity != null){
-                requireActivity().recreate()
-            }
+            actualizarTema()
+
         }
     }
 
@@ -64,6 +66,10 @@ class SettingsFragment : Fragment() {
 
     private fun disableDarkMode(){
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+    }
+
+    private fun actualizarTema() {
+        binding.tvUserInfo.setTextColor(resources.getColor(if (binding.switchDarkMode.isChecked) R.color.white else R.color.black))
     }
 
     override fun onDestroyView() {

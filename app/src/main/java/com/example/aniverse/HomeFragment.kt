@@ -36,31 +36,31 @@ class HomeFragment : Fragment() {
         val animeList = listOf(
             Anime(
                 "Naruto",
-                "Acción, Aventura",
+                getString(R.string.generoNaruto),
                 "Studio Pierrot",
                 "https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg"
             ),
             Anime(
                 "Attack on Titan",
-                "Acción, Drama",
+                getString(R.string.generoAoT),
                 "Wit Studio",
                 "https://upload.wikimedia.org/wikipedia/en/d/d6/Shingeki_no_Kyojin_manga_volume_1.jpg"
             ),
             Anime(
                 "My Hero Academia",
-                "Acción, Superhéroes",
+                getString(R.string.generoMHA),
                 "Bones",
                 "https://upload.wikimedia.org/wikipedia/en/6/6a/My_Hero_Academia_Volume_1.png"
             ),
             Anime(
                 "Demon Slayer",
-                "Acción, Fantasía",
+                getString(R.string.generoDemonSlayer),
                 "Ufotable",
                 "https://upload.wikimedia.org/wikipedia/en/0/09/Demon_Slayer_-_Kimetsu_no_Yaiba%2C_volume_1.jpg"
             ),
             Anime(
                 "One Piece",
-                "Aventura, Comedia",
+                getString(R.string.generoOnePiece),
                 "Toei Animation",
                 "https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg"
             )
