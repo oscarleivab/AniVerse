@@ -8,21 +8,23 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.aniverse.LoginFragment"
-        android:label="fragment_login"
+        android:label="AniVerse"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_noticeFragment"
-            app:destination="@id/noticeFragment" />
+            app:destination="@id/noticeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/creditFragment"
         android:name="com.example.aniverse.CreditFragment"
-        android:label="fragment_credit"
+        android:label="AniVerse"
         tools:layout="@layout/fragment_credit" />
     <fragment
         android:id="@+id/noticeFragment"
         android:name="com.example.aniverse.NoticeFragment"
-        android:label="fragment_notice"
+        android:label="AniVerse"
         tools:layout="@layout/fragment_notice" >
         <action
             android:id="@+id/action_noticeFragment_to_creditFragment"

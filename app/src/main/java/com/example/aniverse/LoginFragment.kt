@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
 import com.example.aniverse.databinding.FragmentLoginBinding
@@ -26,6 +27,8 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.button.setOnClickListener {
             val nombreUsuario = binding.editTextText.text.toString()
+
+            Toast.makeText(requireContext(), "Iniciada sesión en el usuario: $nombreUsuario", Toast.LENGTH_SHORT).show()
 
             // Guardar el nombre del usuario
             val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext())

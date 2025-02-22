@@ -55,7 +55,7 @@
             android:id="@+id/botonFavorito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Añadir a Favoritos"
+            android:text="@string/btnFavoritos"
             android:visibility="gone" /> <!-- Inicialmente oculto -->
 
         <!-- Botón para eliminar de favoritos (visible solo en FavoritesFragment) -->
@@ -63,7 +63,7 @@
             android:id="@+id/botonEliminarFavorito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Eliminar"
+            android:text="@string/btnEliminar"
             android:visibility="gone" /> <!-- Inicialmente oculto -->
     </LinearLayout>
 </androidx.cardview.widget.CardView>

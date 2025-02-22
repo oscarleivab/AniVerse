@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imagenAnime"
+        android:layout_width="197dp"
+        android:layout_height="186dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombreAnime"
+        android:layout_width="377dp"
+        android:layout_height="37dp"
+        android:text="@string/nombre_del_anime"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generoAnime"
+        android:layout_width="279dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/g_nero"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombreAnime" />
+
+    <TextView
+        android:id="@+id/estudiosAnime"
+        android:layout_width="282dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/estudios"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/generoAnime" />
+
+    <EditText
+        android:id="@+id/editTextComentario"
+        android:layout_width="282dp"
+        android:layout_height="0dp"
+        android:hint="@string/editTextFavDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/estudiosAnime" />
+
+    <Button
+        android:id="@+id/botonGuardarComentario"
+        android:layout_width="198dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btnGuardarFavDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextComentario" />
+
+    <TextView
+        android:id="@+id/textoReseñas"
+        android:layout_width="204dp"
+        android:layout_height="174dp"
+        android:text="@string/txtReseñasFavDetail"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreAnime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,6 +23,6 @@ class Tab1NoticeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val nombreUsuario = arguments?.getString("Nombre")
-        binding.tvTab1.text = "BIENVENIDO A ANIVERSE, ${nombreUsuario ?: ""}"
+        binding.tvTab1.text = getString(R.string.bienvenida_usuario, nombreUsuario)
     }
 }

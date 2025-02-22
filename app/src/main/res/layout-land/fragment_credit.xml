@@ -7,19 +7,7 @@
     tools:context=".CreditFragment">
 
     <!-- Toolbar personalizada -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarCredit"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/puple"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/tituloApp"
-        app:titleTextColor="@color/white"
-        android:visibility="invisible"/>
+
 
     <!-- FragmentContainerView para la navegación -->
     <androidx.fragment.app.FragmentContainerView
@@ -27,11 +15,13 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:defaultNavHost="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/btNav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbarCredit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph_credit" />
 
     <!-- BottomNavigationView para la navegación inferior -->
